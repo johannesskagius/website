@@ -1,13 +1,13 @@
-import 'package:firebase_app_check/firebase_app_check.dart';
-import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:website/projects.dart';
+
 import 'about.dart';
 import 'acheive.dart';
 import 'firebase_options.dart';
 
-Future<void> main() async{
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
@@ -50,7 +50,6 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-
     return const Home();
   }
 }
@@ -78,6 +77,7 @@ class _HomeState extends State<Home> {
           duration: const Duration(milliseconds: 200), curve: Curves.easeIn);
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
